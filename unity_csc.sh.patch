@@ -1,4 +1,4 @@
---- /opt/Unity/Editor/Data/Tools/RoslynScripts/unity_csc.sh	2019-12-09 21:28:07.000000000 -0500
+--- /opt/unity/Editor/Data/Tools/RoslynScripts/unity_csc.sh	2019-12-09 21:28:07.000000000 -0500
 +++ unity_csc.sh	2020-01-05 13:19:43.382286963 -0500
 @@ -73,7 +73,7 @@
          else
