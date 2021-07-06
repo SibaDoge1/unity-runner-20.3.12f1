@@ -22,7 +22,7 @@ if [[ -n "$UNITY_LICENSE" ]]; then
   ##
   echo "Requesting activation"
   xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
-    /opt/Unity/Editor/Unity \
+    /opt/unity/Editor/Unity \
       -batchmode \
       -nographics \
       -logFile /dev/stdout \
@@ -39,7 +39,7 @@ if [[ -n "$UNITY_LICENSE" ]]; then
   echo "Verifying activation"
   # Run any command that requires activation to verify
   xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
-    /opt/Unity/Editor/Unity \
+    /opt/unity/Editor/Unity \
       -batchmode \
       -nographics \
       -logFile /dev/stdout \
@@ -71,7 +71,7 @@ else
   # Note: This is the preferred way for PROFESSIONAL LICENSES.
   #
   xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
-    /opt/Unity/Editor/Unity \
+    /opt/unity/Editor/Unity \
       -batchmode \
       -nographics \
       -logFile /dev/stdout \
