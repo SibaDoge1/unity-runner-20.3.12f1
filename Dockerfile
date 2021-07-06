@@ -19,7 +19,7 @@ RUN apt install gnupg ca-certificates && \
     apt-get autoremove -y 
     
 # install sonar scanner
-RUN /opt/Unity/Editor/Data/NetCore/Sdk-2.2.107/dotnet tool install dotnet-sonarscanner --tool-path . --version 4.7.1
+RUN /opt/Unity/Editor/Data/NetCore/Sdk-2.2.107/dotnet tool install dotnet-sonarscanner --tool-path . --version 4.10.0
 
 COPY unity_csc.sh.patch .
 RUN patch /opt/Unity/Editor/Data/Tools/RoslynScripts/unity_csc.sh unity_csc.sh.patch
