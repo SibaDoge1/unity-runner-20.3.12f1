@@ -22,8 +22,10 @@ RUN apt install -y gnupg ca-certificates && \
 # install sonar scanner
 RUN /opt/unity/Editor/Data/NetCore/Sdk-2.2.107/dotnet tool install dotnet-sonarscanner --tool-path . --version 4.10.0
 
-COPY unity_csc.sh.patch .
-RUN patch /opt/unity/Editor/Data/Tools/RoslynScripts/unity_csc.sh unity_csc.sh.patch
+RUN cat /opt/unity/Editor/Data/Tools/RoslynScripts/unity_csc.sh
+
+#COPY unity_csc.sh.patch .
+#RUN patch /opt/unity/Editor/Data/Tools/RoslynScripts/unity_csc.sh unity_csc.sh.patch
 
 # install docfx
 RUN wget https://github.com/dotnet/docfx/releases/download/v2.56.6/docfx.zip && \
