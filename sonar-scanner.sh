@@ -43,6 +43,6 @@ fi
 
 sh -c "$begin_cmd"
 
-sh -c "/opt/Unity/Editor/Data/NetCore/Sdk-2.2.107/dotnet build ${INPUT_SOLUTION}"
+sh -c "/opt/unity/Editor/Data/NetCore/Sdk-2.2.107/dotnet build ${INPUT_SOLUTION}"
 
 sh -c "$end_cmd"
